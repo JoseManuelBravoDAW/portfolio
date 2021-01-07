@@ -1,0 +1,57 @@
+body{
+    background: lightskyblue;
+    margin: 0;
+}
+/* comentario */
+
+#mainMenu{
+
+    background: rgb(63, 63, 117);
+    color: white;
+    
+    
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-out;
+
+
+    text-align: center;
+    margin: 0;
+    list-style-type: none;
+}
+
+#mainMenuIcon{
+    display: inline-block;
+}
+#mainMenuIcon:hover ~ #mainMenu{
+    
+    
+    opacity: 1;
+    height: auto;
+}
+
+nav{
+    display: inline-block;
+
+}
+
+#mainMenuItems li:hover{
+    background: tomato;
+    color: black;
+}
+
+header{
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 0;
+    padding-top: 2%;
+    background-color: rgb(101, 52, 238);
+    color: whitesmoke;
+}
+
+#portfolioTitle{
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+}
