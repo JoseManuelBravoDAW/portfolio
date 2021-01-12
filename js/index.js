@@ -2,25 +2,39 @@
     function init() {
         
         mainMenuToggle();
+
+        scrollOnClick();
     }
     
     function mainMenuToggle() {
         let listButton = document.getElementById('mainMenuIcon');
         let mainMenu = document.getElementById('mainMenu');
-    
+        let menuOpen = false;
         listButton.addEventListener('click', function () {
             
-            if (mainMenu.classList.contains("mainMenuClose")) {
+            if (menuOpen) {
                 
-                mainMenu.classList.add("mainMenuOpen");
-                mainMenu.classList.remove("mainMenuClose");
-            } else {
-                mainMenu.classList.add("mainMenuClose");
                 mainMenu.classList.remove("mainMenuOpen");
+                menuOpen = false;
+            } else {
+                mainMenu.classList.add("mainMenuOpen");
+                menuOpen = true;
             }
             
         });
 
+    }
+
+    function scrollOnClick() {
+        $('li a').on('click', function (e) {
+            var targetSec = $(this).text().replace(/ /g,'');
+            
+            console.log(targetSec);
+            
+            $('html, body').animate({
+               scrollTop: $('#' + targetSec).offset().top-60
+            }, 2000);
+         });
     }
 
 

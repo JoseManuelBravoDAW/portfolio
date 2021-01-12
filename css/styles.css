@@ -1,14 +1,16 @@
 body{
-    background: lightskyblue;
+    background: snow;
+    
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 /* comentario */
 
 #mainMenu{
 
-    background: rgb(63, 63, 117);
+    background: lightskyblue;
     color: white;
-    
+    padding-left: 0;
     
     opacity: 0;
     height: 0;
@@ -24,34 +26,140 @@ body{
 #mainMenuIcon{
     display: inline-block;
 }
-#mainMenuIcon:hover ~ #mainMenu{
-    
-    
-    opacity: 1;
-    height: auto;
+
+.mainMenuOpen{
+
+    opacity: 1 !important;
+    height: auto !important;
 }
+
 
 nav{
-    display: inline-block;
+    *display: inline-block;
 
 }
 
-#mainMenuItems li:hover{
-    background: tomato;
-    color: black;
+.mainMenuLink:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.mainMenuLink{
+    background: rgb(87, 87, 139);
+    
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80vw;
+    margin-bottom: 5px;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 header{
-    border-bottom: 1px solid black;
+    *border-bottom: 1px solid black;
     margin: 0;
     padding: 0;
     padding-top: 2%;
-    background-color: rgb(101, 52, 238);
+    background-color: lightskyblue;
     color: whitesmoke;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
 
+header h2{
+    color: black;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+main h2{
+    color: lightskyblue;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
 #portfolioTitle{
     text-align: center;
     display: inline-block;
     width: 80%;
+}
+
+#portrait{
+    width: 50vw;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article{
+    height: 80vh;
+}
+
+@media only screen and (min-width: 768px){
+
+    #mainMenu{
+        opacity: 1;
+        padding-left: 0;
+        height: auto;
+        
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    nav{
+        /** get this to work **/
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        *height: 100px;
+        
+    }
+    
+    #mainMenuItems{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+
+    }
+
+    .mainMenuLink{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: auto;
+    }
+
+    #mainMenuIcon{
+        display: none;
+    }
+
+    #portfolioTitle{
+        width: 100%;
+    }
+
+    body{
+        *border: 2px solid black;
+        scroll-snap-type: y mandatory;
+    }
+
+    /** make these scroll-snap **/
+    article{
+        border: 1px solid lightslategray;
+        height: 500px;
+        margin: 10px;
+
+        scroll-snap-align: start;
+    }
+
+    #portrait{
+        width: 20vw;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2{
+        text-align: center;
+    }
 }
