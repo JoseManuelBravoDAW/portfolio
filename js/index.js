@@ -27,9 +27,8 @@
 
     function scrollOnClick() {
         $('li a').on('click', function (e) {
+            e.preventDefault();
             var targetSec = $(this).text().replace(/ /g,'');
-            
-            console.log(targetSec);
             
             $('html, body').animate({
                scrollTop: $('#' + targetSec).offset().top-60
