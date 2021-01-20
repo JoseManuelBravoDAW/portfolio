@@ -94,6 +94,7 @@ main h2{
 
 article{
     height: 80vh;
+    background: lightblue;
 }
 
 @media only screen and (min-width: 768px){
@@ -113,7 +114,7 @@ article{
         position: sticky;
         top: 0;
         *height: 100px;
-        
+        z-index: 1;
     }
     
     #mainMenuItems{

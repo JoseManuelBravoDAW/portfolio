@@ -1,5 +1,7 @@
 {
     function init() {
+
+        AOS.init();
         
         mainMenuToggle();
 
