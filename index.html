@@ -4,101 +4,157 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/animate.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!--JS-->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/wow.min.js"></script>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
       integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
       crossorigin="anonymous"
     ></script>
+    <script src="js/index.js"></script>
   </head>
 
   <body>
     <header>
-      <span id="portfolioTitle">
+      <!-- <span id="portfolioTitle">
         <h1>JAVIER GARCÍA QUINTERO</h1>
         <h2>INGENIERO ELECTRÓNICO INDUSTRIAL</h2>
-      </span>
+      </span> -->
 
+      <img src="img/nameJavi.png" alt="nombre" />
+      <img src="img/CV3.png" alt="foto" />
+      <div id="socialLinks">
+        <i class="fab fa-linkedin"></i>
+      </div>
       <div id="mainMenuIcon"><i class="fas fa-list"></i></div>
     </header>
 
     <nav>
       <ul id="mainMenu">
         <div id="mainMenuItems">
-          <li><a href="#" class="mainMenuLink">Presentación</a></li>
           <li><a href="#" class="mainMenuLink">Sobre mi</a></li>
           <li><a href="#" class="mainMenuLink">Experiencia</a></li>
-          <li><a href="#" class="mainMenuLink">Formación</a></li>
           <li><a href="#" class="mainMenuLink">Contacto</a></li>
         </div>
       </ul>
     </nav>
 
     <main>
-      <article id="Presentación" data-aos="fade-up" data-aos-duration="2000">
-        <img
-          src="img/javiFotoCV.jpg"
-          alt="Javier García Quintero"
-          id="portrait"
-        />
-        <h2>PRESENTACIÓN</h2>
-        <p>
-          Con mi trabajo puedo contribuir a conseguir productos de calidad y
-          cubrir las demandas del cliente de la forma más eficiente posible,
-          mediante el análisis de la propuesta del cliente y el diseño de
-          alternativas que se adecuen a sus necesidades. Para ello pongo en
-          valor mi creatividad para visualizar posibles soluciones y seleccionar
-          la óptima.
-        </p>
+      <article id="Sobremi">
+        <div class="skewDiv">
+
+          <h2>SOBRE MI</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima,
+            assumenda! Quae accusantium temporibus voluptate molestias ab at cum,
+            nesciunt, ratione, ex qui corporis laboriosam voluptatem voluptatum
+            tenetur accusamus fugiat delectus!
+          </p>
+        </div>
       </article>
 
-      <article id="Sobremi" data-aos="fade-up" data-aos-duration="2000">
-        <h2>SOBRE MI</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima,
-          assumenda! Quae accusantium temporibus voluptate molestias ab at cum,
-          nesciunt, ratione, ex qui corporis laboriosam voluptatem voluptatum
-          tenetur accusamus fugiat delectus!
-        </p>
+      <article id="Experiencia">
+        
+          <h2>EXPERIENCIA</h2>
+
+
+
+          <ul class="timeline timeline-centered">
+            <li class="timeline-item">
+                <div class="timeline-info" data-aos="fade-right" data-aos-duration="1500">
+                    <span>March 12, 2016</span>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content" data-aos="fade-left" data-aos-duration="1500">
+                    <h3 class="timeline-title">Event Title</h3>
+                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                        eu pede mollis pretium. Pellentesque ut neque.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-info" data-aos="fade-left" data-aos-duration="1500">
+                    <span>March 23, 2016</span>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content" data-aos="fade-right" data-aos-duration="1500">
+                    <h3 class="timeline-title">Event Title</h3>
+                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                        eu pede mollis pretium. Pellentesque ut neque. </p>
+                </div>
+            </li>
+            <!-- <li class="timeline-item period">
+                <div class="timeline-info"></div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h2 class="timeline-title">April 2016</h2>
+                </div>
+            </li> -->
+            <li class="timeline-item">
+                <div class="timeline-info" data-aos="fade-right" data-aos-duration="2000">
+                    <span>April 02, 2016</span>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content" data-aos="fade-left" data-aos-duration="2000">
+                    <h3 class="timeline-title">Event Title</h3>
+                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                        eu pede mollis pretium. Pellentesque ut neque. </p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-info" data-aos="fade-left" data-aos-duration="2000">
+                    <span>April 28, 2016</span>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content" data-aos="fade-right" data-aos-duration="2000">
+                    <h3 class="timeline-title">Event Title</h3>
+                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                        eu pede mollis pretium. Pellentesque ut neque. </p>
+                </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-info" data-aos="fade-right" data-aos-duration="2000">
+                  <span>May 28, 2016</span>
+              </div>
+              <div class="timeline-marker"></div>
+              <div class="timeline-content" data-aos="fade-left" data-aos-duration="2000">
+                  <h3 class="timeline-title">Event Title</h3>
+                  <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                      eu pede mollis pretium. Pellentesque ut neque. </p>
+              </div>
+          </li>
+        </ul>
+
+
+
+
+
+        
       </article>
-      <article id="Experiencia" data-aos="fade-up" data-aos-duration="2000">
-        <h2>EXPERIENCIA</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima,
-          assumenda! Quae accusantium temporibus voluptate molestias ab at cum,
-          nesciunt, ratione, ex qui corporis laboriosam voluptatem voluptatum
-          tenetur accusamus fugiat delectus!
-        </p>
-      </article>
-      <article id="Formación" data-aos="fade-up" data-aos-duration="2000">
-        <h2>FORMACIÓN</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima,
-          assumenda! Quae accusantium temporibus voluptate molestias ab at cum,
-          nesciunt, ratione, ex qui corporis laboriosam voluptatem voluptatum
-          tenetur accusamus fugiat delectus!
-        </p>
-      </article>
-      <article id="Contacto" data-aos="fade-up" data-aos-duration="2000">
-        <h2>CONTACTO</h2>
+
+      <article id="Contacto">
+        <div>
+          <h2>CONTACTO</h2>
+        </div>
       </article>
     </main>
 
     <!-- comentario -->
   </body>
 </html>
+

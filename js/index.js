@@ -2,6 +2,7 @@
     function init() {
 
         AOS.init();
+        new WOW().init();
         
         mainMenuToggle();
 
